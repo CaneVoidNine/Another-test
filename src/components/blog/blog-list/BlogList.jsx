@@ -8,7 +8,9 @@ const BlogList = (props) => {
 
   React.useEffect(() => {
     const fetching = async () => {
-      let response = await fetch("damiansapi-main-production.up.railway.app");
+      let response = await fetch(
+        "https://damiansapi-main-production.up.railway.app/books"
+      );
       if (response.ok) {
         const fetchedData = await response.json();
         setNews(fetchedData);
