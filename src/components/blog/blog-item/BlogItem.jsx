@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BlogAuthor from "../blog-author/BlogAuthor";
+
 import "./styles.css";
 const BlogItem = (props) => {
   const { title, cover, author, _id, img, price, category, asin } = props;
