@@ -23,9 +23,10 @@ const BlogList = (props) => {
 
   console.log(news);
   const blogstoprint = news.booksArray;
+
   return (
     <Row>
-      {blogstoprint.map((post) => (
+      {blogstoprint?.map((post) => (
         <Col
           md={4}
           style={{
